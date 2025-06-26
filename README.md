@@ -85,8 +85,11 @@ Construído com **Python** e **Streamlit**, o projeto oferece uma interface simp
 
 #### 🖼️ Demonstrações (capturas de tela)
 
+- Página Inicial da Aplicação
 ![Página Inicial da Aplicação](https://i.postimg.cc/VLWnLqvt/image.png)
 
+- Resultado da Consulta por um Nome
 ![Resultado da Consulta por um Nome](https://i.postimg.cc/rFVzjvyd/image.png)
 
+- Tratamento de erros para nomes inexistentes
 ![Tratamento de erros para nomes inexistentes](https://i.postimg.cc/tJ2q84Rs/image.png)
