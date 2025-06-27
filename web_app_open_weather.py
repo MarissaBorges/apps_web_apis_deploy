@@ -1,6 +1,4 @@
 import requests
-from dotenv import load_dotenv, find_dotenv
-import os
 import streamlit as st
 
 def fazer_request(url, params=None):
@@ -8,20 +6,19 @@ def fazer_request(url, params=None):
     try:
         resposta.raise_for_status()
     except requests.HTTPError as e:
+        if e == 401:
+            resultado = 401
         print(f"Erro no request: {e}")
         resultado = None
-    except resposta.status_code == 401:
-        resultado = 401
     else:
         resultado = resposta.json()
     return resultado
 
 def pegar_tempo_para_local(local):
     try:
-        load_dotenv(find_dotenv())
-        token = os.getenv('CHAVE_API_OPEN_WEATHER')
+        token = st.secrets.get("CHAVE_API_OPEN_WEATHER")
     except Exception as e:
-        print("Ocorreu um erro ao acessar o arquivo .env")
+        print("Ocorreu um erro ao acessar o arquivo secrets")
         print(f"Erro: {e}")
     else:
         url = "https://api.openweathermap.org/data/2.5/weather"
