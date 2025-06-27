@@ -1,23 +1,66 @@
-### 📊 Análise de Nomes no Brasil com Python e Streamlit
+# 🚀 Portfólio de Aplicações Web com Python e Streamlit
 
-🔗 **Link do Projeto na Web**: [Analisador de Nomes IBGE](https://web-app-ibge.streamlit.app/)
+Este repositório contém uma coleção de aplicações web interativas desenvolvidas com Python e a biblioteca Streamlit. Cada projeto demonstra a integração com diferentes APIs e a visualização de dados de forma prática e elegante.
+
+---
+
+### 📚 Índice de Projetos
+
+1.  [**📊 Análise de Nomes IBGE**](#-análise-de-nomes-no-brasil-com-python-e-streamlit)
+2.  [**☀️ App de Previsão do Tempo**](#️-app-de-previsão-do-tempo-com-python-e-streamlit)
+3.  [**🎵 Busca de Artistas no Spotify**](#-busca-de-artistas-no-spotify-com-python-e-streamlit)
+
+---
+
+### 🏃 Como Executar os Projetos
+
+As instruções abaixo são gerais. Cada projeto pode exigir uma configuração adicional (como chaves de API), detalhada em sua respectiva seção.
+
+1.  **Clone o Repositório:**
+
+    ```bash
+    git clone https://github.com/MarissaBorges/apps_web_apis_deploy.git
+
+    cd apps_web_apis_deploy
+    ```
+
+2.  **Crie e Ative um Ambiente Virtual (Recomendado):**
+
+    ```bash
+    # Windows
+    python -m venv venv
+    .\\venv\\Scripts\\activate
+
+    # macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Instale as Dependências:**
+    - Use o arquivo [`requirements.txt`](requirements.txt) presente no repositório e instale as bibliotecas com o comando:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+---
+
+## 📊 Análise de Nomes no Brasil com Python e Streamlit
+
+🔗 **Link do Projeto na Web**: [Web App IBGE](https://web-app-ibge.streamlit.app/)
 
 #### 📌 Descrição
 
-O **Analisador de Nomes IBGE** é uma aplicação web interativa desenvolvida para visualizar a popularidade de nomes no Brasil ao longo das décadas. A ferramenta consome a API pública de Nomes do **IBGE** e apresenta a frequência de um determinado nome em uma tabela e em um gráfico de linha, permitindo uma análise clara de sua evolução temporal.
-
-Construído com **Python** e **Streamlit**, o projeto oferece uma interface simples onde o usuário insere um nome e recebe instantaneamente a análise visual e numérica dos dados, tornando fácil a exploração de tendências de nomes no país.
-
----
+O **Analisador de Nomes IBGE** é uma aplicação web interativa desenvolvida para visualizar a popularidade de nomes no Brasil ao longo das décadas. A ferramenta consome a API pública de Nomes do **IBGE** e apresenta a frequência de um determinado nome em uma tabela e em um gráfico de linha.
 
 #### 🚀 Funcionalidades
 
-- **Consulta Dinâmica:** Busque qualquer nome e veja sua frequência histórica em tempo real.
-- **Tabela de Frequência:** Exibe os dados brutos de frequência para cada década de forma organizada.
-- **Gráfico de Evolução:** Plota um gráfico de linhas que ilustra a ascensão ou queda da popularidade do nome.
-- **Integração com API do IBGE:** Garante que os dados sejam confiáveis e diretamente extraídos da fonte oficial.
+- **Consulta Dinâmica:** Busque qualquer nome e veja sua frequência histórica.
+- **Tabela de Frequência:** Exibe os dados de frequência para cada década.
+- **Gráfico de Evolução:** Plota um gráfico de linhas que ilustra a popularidade do nome no tempo.
 
----
+#### 🖼️ [Demonstrações (captura de tela)](#-screenshots-web-app-ibge)
 
 #### 🛠️ Tecnologias Utilizadas
 
@@ -25,71 +68,120 @@ Construído com **Python** e **Streamlit**, o projeto oferece uma interface simp
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
----
+#### ▶️ Como Executar este Projeto
 
-#### 🏃 Como Executar
-
-1.  **Clone o Repositório:**
-
-    - Abra o seu terminal e clone este projeto para a sua máquina local.
-
-    ```bash
-    git clone https://github.com/MarissaBorges/app_ibge_deploy.git
-    ```
-
-2.  **Acesse a Pasta do Projeto:**
-
-    ```bash
-    cd app_ibge_deploy
-    ```
-
-3.  **Crie e Ative um Ambiente Virtual (Recomendado):**
-
-    - Isso isola as dependências do projeto.
-
-    ```bash
-    # Para Windows
-    python -m venv venv
-    .\\venv\\Scripts\\activate
-
-    # Para macOS/Linux
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-4.  **Instale as Dependências:**
-
-    - As bibliotecas necessárias estão listadas no arquivo `requirements.txt`. Instale-as com o comando:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5.  **Execute a Aplicação:**
-    - Com tudo instalado, inicie o servidor do Streamlit:
-    ```bash
-    streamlit run app.py
-    ```
-    - A aplicação será aberta automaticamente no seu navegador padrão.
+- Após seguir os passos gerais de instalação, execute o comando:
+  ```bash
+  streamlit run web_app_ibge.py
+  ```
 
 ---
 
-#### 🔒 Destaques Técnicos
+---
 
-- 🔌 **Consumo de API REST:** Conecta-se diretamente à API do IBGE para buscar dados de forma eficiente.
-- 🔄 **Manipulação de Dados:** Utiliza a biblioteca **Pandas** para transformar os dados JSON da API em um DataFrame estruturado.
-- 🎨 **Interface Reativa:** A interface, construída com **Streamlit**, reage instantaneamente à entrada do usuário sem a necessidade de recarregar a página.
-- 📈 **Visualização de Dados:** Geração automática de tabelas e gráficos para uma interpretação clara e imediata dos resultados.
+## ☀️ App de Previsão do Tempo com Python e Streamlit
+
+🔗 **Link do Projeto na Web**: [Web App OpenWeather](https://web-app-openweather.streamlit.app/)
+
+#### 📌 Descrição
+
+O **App de Previsão do Tempo** permite aos usuários consultar as condições climáticas atuais de qualquer cidade do mundo. A ferramenta utiliza a API da **OpenWeather** para buscar dados em tempo real, como temperatura, sensação térmica, umidade e cobertura de nuvens.
+
+#### 🚀 Funcionalidades
+
+- **Busca por Cidade:** Consulte o tempo inserindo o nome de qualquer cidade.
+- **Dados em Tempo Real:** Exibe informações climáticas atualizadas.
+- **Métricas Detalhadas:** Apresenta temperatura, sensação térmica, umidade e nuvens.
+
+#### 🖼️ [Demonstrações (captura de tela)](#️-screenshots-web-app-openweather)
+
+#### 🛠️ Tecnologias Utilizadas
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![API](https://img.shields.io/badge/OpenWeather%20API-EB6E4B?style=for-the-badge&logo=openweathermap&logoColor=white)
+
+#### ▶️ Como Executar este Projeto
+
+1.  **Configure a Chave da API:**
+    - Entre no site da [OpenWeather](https://openweathermap.org/api) e crie sua chave de API gratuitamente
+    - Crie um arquivo chamado `.env` na raiz do projeto.
+    - Dentro dele, adicione sua chave da API da OpenWeather:
+      ```
+      CHAVE_API_OPEN_WEATHER="sua_chave_aqui"
+      ```
+2.  **Execute a Aplicação:**
+    - Após seguir os passos gerais de instalação, execute o comando:
+      ```bash
+      streamlit run web_app_open_weather.py
+      ```
 
 ---
 
-#### 🖼️ Demonstrações (capturas de tela)
+---
 
-- Página Inicial da Aplicação
-![Página Inicial da Aplicação](https://i.postimg.cc/VLWnLqvt/image.png)
+## 🎵 Busca de Artistas no Spotify com Python e Streamlit
 
-- Resultado da Consulta por um Nome
-![Resultado da Consulta por um Nome](https://i.postimg.cc/rFVzjvyd/image.png)
+🔗 **Link do Projeto na Web**: [Web App Spotify](https://web-app-spotify.streamlit.app/)
 
-- Tratamento de erros para nomes inexistentes
-![Tratamento de erros para nomes inexistentes](https://i.postimg.cc/tJ2q84Rs/image.png)
+#### 📌 Descrição
+
+O **Busca de Artistas Spotify** permite pesquisar por um artista e visualizar suas informações detalhadas, incluindo popularidade, seguidores, gêneros e as suas 10 músicas mais populares, utilizando a **[API oficial do Spotify](https://developer.spotify.com/documentation/web-api)**.
+
+#### 🚀 Funcionalidades
+
+- **Busca de Artistas:** Encontre qualquer artista cadastrado no Spotify.
+- **Dashboard do Artista:** Exibe foto, link, popularidade, seguidores e gêneros.
+- **Top 10 Músicas:** Lista as 10 faixas mais populares com capa e link.
+- **Autenticação Segura:** Utiliza OAuth 2.0 para acessar a API.
+
+#### 🖼️ [Demonstrações (captura de tela)](#-screenshots-web-app-spotify)
+
+#### 🛠️ Tecnologias Utilizadas
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Spotify](https://img.shields.io/badge/Spotify%20API-1ED760?style=for-the-badge&logo=spotify&logoColor=white)
+
+#### ▶️ Como Executar este Projeto
+
+1.  **Configure as Credenciais da API:**
+    - Obtenha seu `Client ID` e `Client Secret` no [Dashboard de Desenvolvedor do Spotify](https://developer.spotify.com/dashboard/).
+    - Crie ou edite o arquivo `.env` na raiz do projeto e adicione suas credenciais:
+      ```
+      SPOTIFY_CLIENT_ID="seu_client_id_aqui"
+      SPOTIFY_CLIENT_SECRET="seu_client_secret_aqui"
+      ```
+2.  **Execute a Aplicação:**
+    - Após seguir os passos gerais de instalação, execute o comando:
+      ```bash
+      streamlit run web_app_spotify.py
+      ```
+
+---
+
+## 🖼️ Demonstrações (capturas de tela)
+
+#### 📊 Screenshots Web App IBGE
+
+![Tela Inicial](https://i.postimg.cc/VLWnLqvt/image.png)
+
+![Tela de Pesquisa](https://i.postimg.cc/KYHwyH4f/image.png)
+
+---
+
+#### ☀️ Screenshots Web App OpenWeather
+
+![Tela Inicial](https://i.postimg.cc/1XCNWwv8/image.png)
+
+![Tela de Pesquisa](https://i.postimg.cc/9fJnCFFy/image.png)
+
+---
+
+#### 🎵 Screenshots Web App Spotify
+
+![Tela Inicial](https://i.postimg.cc/t4ybgJyc/image.png)
+
+![Tela de Pesquisa Artista](https://i.postimg.cc/76cDPNY1/image.png)
+
+![Tela de Pesquisa Albuns](https://i.postimg.cc/N0XjnM8f/image.png)
