@@ -1,15 +1,11 @@
 from pprint import pprint
 import requests
 from requests.auth import HTTPBasicAuth
-from dotenv import load_dotenv, find_dotenv
-import os
 import streamlit as st
 
-load_dotenv(find_dotenv())
-
 def autenticar():
-    client_id = os.getenv('SPOTIFY_CLIENT_ID')
-    client_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
+    client_id = st.secrets.get("SPOTIFY_CLIENT_ID")
+    client_secret = st.secrets.get("SPOTIFY_CLIENT_SECRET")
     auth = HTTPBasicAuth(username=client_id, password=client_secret) # type: ignore
 
     url = "https://accounts.spotify.com/api/token"
@@ -21,6 +17,9 @@ def autenticar():
     try:
         resposta.raise_for_status()
     except requests.HTTPError as e:
+        if resposta.status_code == 401 or resposta.status_code == 400:
+            token = 401
+            return token
         print(f"Erro no request: {e}")
         token = None
     else:
@@ -72,6 +71,10 @@ def main():
     if botao and nome_artista:
         token = autenticar()
         if not token:
+            st.stop()
+
+        if token == 401:
+            st.error("Acesso não autorizado, por favor entre em contato com o desenvolvedor https://www.linkedin.com/in/marissaborges/")
             st.stop()
 
         headers = {
