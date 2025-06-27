@@ -33,7 +33,6 @@ def pegar_nome_por_decada(nome):
     return dict_decadas
 
 def main():
-
     st.title("Web app nomes")
     st.markdown("Fonte: [Dados do IBGE](https://servicodados.ibge.gov.br/api/docs/nomes?versao=2)")
     nome = st.text_input("Consulte um nome:")
