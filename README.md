@@ -48,7 +48,7 @@ As instruções abaixo são gerais. Cada projeto pode exigir uma configuração 
 
 ## 📊 Análise de Nomes no Brasil com Python e Streamlit
 
-🔗 **Link do Projeto na Web**: [Web App IBGE](https://web-app-ibge.streamlit.app/)
+🔗 **Link do Projeto na Web**: [Web App IBGE](https://web-app-api-ibge.streamlit.app/)
 
 #### 📌 Descrição
 
