@@ -1,187 +1,215 @@
-# 🚀 Portfólio de Aplicações Web com Python e Streamlit
+<!-- PROJECT -->
+<h1 align="center" style="font-weight: bold;">Portfólio de Aplicações Web com Python 🚀</h1>
 
-Este repositório contém uma coleção de aplicações web interativas desenvolvidas com Python e a biblioteca Streamlit. Cada projeto demonstra a integração com diferentes APIs e a visualização de dados de forma prática e elegante.
+<p align="center">
+<!-- Adicione aqui os badges das tecnologias que você usou -->
+<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python Badge">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit Badge">
+<img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Badge">
+<img src="https://img.shields.io/badge/Spotify%20API-1ED760?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify API Badge">
+<img src="https://img.shields.io/badge/OpenWeather%20API-EB6E4B?style=for-the-badge&logo=openweathermap&logoColor=white" alt="OpenWeather API Badge">
+</p>
 
----
+<p align="center">
+  <a href="https://fifa-dep.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Deployed%20on-Streamlit%20Cloud-FF4B4B?logo=streamlit&style=for-the-badge" alt="Deployed on Streamlit Cloud">
+  </a>
+</p>
 
-### 📚 Índice de Projetos
-
-1.  [**📊 Análise de Nomes IBGE**](#-análise-de-nomes-no-brasil-com-python-e-streamlit)
-2.  [**☀️ App de Previsão do Tempo**](#️-app-de-previsão-do-tempo-com-python-e-streamlit)
-3.  [**🎵 Busca de Artistas no Spotify**](#-busca-de-artistas-no-spotify-com-python-e-streamlit)
-
----
-
-### 🏃 Como Executar os Projetos
-
-As instruções abaixo são gerais. Cada projeto pode exigir uma configuração adicional (como chaves de API), detalhada em sua respectiva seção.
-
-1.  **Clone o Repositório:**
-
-    ```bash
-    git clone https://github.com/MarissaBorges/apps_web_apis_deploy.git
-
-    cd apps_web_apis_deploy
-    ```
-
-2.  **Crie e Ative um Ambiente Virtual (Recomendado):**
-
-    ```bash
-    # Windows
-    python -m venv venv
-    .\\venv\\Scripts\\activate
-
-    # macOS/Linux
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3.  **Instale as Dependências:**
-    - Use o arquivo [`requirements.txt`](requirements.txt) presente no repositório e instale as bibliotecas com o comando:
-    ```bash
-    pip install -r requirements.txt
-    ```
+<p align="center">
+<a href="#-descrição">Descrição</a> •
+<a href="#-funcionalidades">Funcionalidades</a> •
+<a href="#-destaques-técnicos">Destaques</a> •
+<a href="#-como-executar-localmente">Como Executar</a> •
+<a href="#️-demonstrações-capturas-de-tela">Demonstrações</a> •
+<a href="#-projetos-na-web">Projetos na Web</a>
+</p>
 
 ---
 
----
+## 📌 Descrição
 
-## 📊 Análise de Nomes no Brasil com Python e Streamlit
-
-🔗 **Link do Projeto na Web**: [Web App IBGE](https://web-app-api-ibge.streamlit.app/)
-
-#### 📌 Descrição
-
-O **Analisador de Nomes IBGE** é uma aplicação web interativa desenvolvida para visualizar a popularidade de nomes no Brasil ao longo das décadas. A ferramenta consome a API pública de Nomes do **IBGE** e apresenta a frequência de um determinado nome em uma tabela e em um gráfico de linha.
-
-#### 🚀 Funcionalidades
-
-- **Consulta Dinâmica:** Busque qualquer nome e veja sua frequência histórica.
-- **Tabela de Frequência:** Exibe os dados de frequência para cada década.
-- **Gráfico de Evolução:** Plota um gráfico de linhas que ilustra a popularidade do nome no tempo.
-
-#### 🖼️ [Demonstrações (captura de tela)](#-screenshots-web-app-ibge)
-
-#### 🛠️ Tecnologias Utilizadas
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-#### ▶️ Como Executar este Projeto
-
-- Após seguir os passos gerais de instalação, execute o comando:
-  ```bash
-  streamlit run web_app_ibge.py
-  ```
+Este repositório é um portfólio que reúne uma coleção de **aplicações web interativas** desenvolvidas com **Python** e a biblioteca **Streamlit**. O objetivo é demonstrar a criação de soluções práticas e elegantes que integram diferentes APIs para buscar e visualizar dados em tempo real. Cada projeto foi pensado para ser uma ferramenta útil e um exemplo claro do poder do Python no desenvolvimento web.
 
 ---
 
----
+## 🚀 Funcionalidades
 
-## ☀️ App de Previsão do Tempo com Python e Streamlit
+Este portfólio inclui os seguintes projetos:
 
-🔗 **Link do Projeto na Web**: [Web App OpenWeather](https://web-app-openweather.streamlit.app/)
-
-#### 📌 Descrição
-
-O **App de Previsão do Tempo** permite aos usuários consultar as condições climáticas atuais de qualquer cidade do mundo. A ferramenta utiliza a API da **OpenWeather** para buscar dados em tempo real, como temperatura, sensação térmica, umidade e cobertura de nuvens.
-
-#### 🚀 Funcionalidades
-
-- **Busca por Cidade:** Consulte o tempo inserindo o nome de qualquer cidade.
-- **Dados em Tempo Real:** Exibe informações climáticas atualizadas.
-- **Métricas Detalhadas:** Apresenta temperatura, sensação térmica, umidade e nuvens.
-
-#### 🖼️ [Demonstrações (captura de tela)](#️-screenshots-web-app-openweather)
-
-#### 🛠️ Tecnologias Utilizadas
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![API](https://img.shields.io/badge/OpenWeather%20API-EB6E4B?style=for-the-badge&logo=openweathermap&logoColor=white)
-
-#### ▶️ Como Executar este Projeto
-
-1.  **Configure a Chave da API:**
-    - Entre no site da [OpenWeather](https://openweathermap.org/api) e crie sua chave de API gratuitamente
-    - Crie um arquivo chamado `.env` na raiz do projeto.
-    - Dentro dele, adicione sua chave da API da OpenWeather:
-      ```
-      CHAVE_API_OPEN_WEATHER="sua_chave_aqui"
-      ```
-2.  **Execute a Aplicação:**
-    - Após seguir os passos gerais de instalação, execute o comando:
-      ```bash
-      streamlit run web_app_open_weather.py
-      ```
+- **Analisador de Nomes (IBGE):** Permite visualizar a popularidade de nomes no Brasil ao longo das décadas, consumindo a API pública do IBGE.
+- **Previsão do Tempo (OpenWeather):** Consulta as condições climáticas atuais de qualquer cidade do mundo em tempo real.
+- **Busca de Artistas (Spotify):** Pesquisa por artistas no Spotify e exibe informações detalhadas, como popularidade, seguidores e as 10 músicas mais tocadas.
 
 ---
 
+## 🔒 Destaques Técnicos
+
+- **Integração com APIs Externas:** Conexão e consumo de dados de três APIs distintas (IBGE, OpenWeather e Spotify), lidando com diferentes formatos de resposta.
+- **Autenticação Segura:** Implementação do fluxo de autenticação **OAuth 2.0 (Client Credentials)** para garantir o acesso seguro à API do Spotify.
+- **Desenvolvimento Rápido de UI:** Uso do Streamlit para construir interfaces de usuário interativas e responsivas com poucas linhas de código.
+- **Visualização de Dados:** Criação de tabelas e gráficos dinâmicos com Pandas e Streamlit para apresentar os dados de forma clara e intuitiva.
+
 ---
 
-## 🎵 Busca de Artistas no Spotify com Python e Streamlit
+## 📍 Como Executar Localmente
 
-🔗 **Link do Projeto na Web**: [Web App Spotify](https://web-app-spotify.streamlit.app/)
+Siga as instruções abaixo para executar os projetos em seu ambiente local.
 
-#### 📌 Descrição
+### Pré-requisitos
 
-O **Busca de Artistas Spotify** permite pesquisar por um artista e visualizar suas informações detalhadas, incluindo popularidade, seguidores, gêneros e as suas 10 músicas mais populares, utilizando a **[API oficial do Spotify](https://developer.spotify.com/documentation/web-api)**.
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/)
 
-#### 🚀 Funcionalidades
+### Clonando o Repositório
 
-- **Busca de Artistas:** Encontre qualquer artista cadastrado no Spotify.
-- **Dashboard do Artista:** Exibe foto, link, popularidade, seguidores e gêneros.
-- **Top 10 Músicas:** Lista as 10 faixas mais populares com capa e link.
-- **Autenticação Segura:** Utiliza OAuth 2.0 para acessar a API.
+```bash
+# Clone o projeto para a sua máquina local
+git clone https://github.com/MarissaBorges/apps_web_apis_deploy.git
 
-#### 🖼️ [Demonstrações (captura de tela)](#-screenshots-web-app-spotify)
+# Entre no diretório do projeto
+cd apps_web_apis_deploy
+```
 
-#### 🛠️ Tecnologias Utilizadas
+### Ambiente Virtual
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Spotify](https://img.shields.io/badge/Spotify%20API-1ED760?style=for-the-badge&logo=spotify&logoColor=white)
+É uma boa prática isolar as dependências do projeto.
 
-#### ▶️ Como Executar este Projeto
+```bash
+# Crie o ambiente virtual
+python -m venv .venv
 
-1.  **Configure as Credenciais da API:**
-    - Obtenha seu `Client ID` e `Client Secret` no [Dashboard de Desenvolvedor do Spotify](https://developer.spotify.com/dashboard/).
-    - Crie ou edite o arquivo `.env` na raiz do projeto e adicione suas credenciais:
-      ```
-      SPOTIFY_CLIENT_ID="seu_client_id_aqui"
-      SPOTIFY_CLIENT_SECRET="seu_client_secret_aqui"
-      ```
-2.  **Execute a Aplicação:**
-    - Após seguir os passos gerais de instalação, execute o comando:
-      ```bash
-      streamlit run web_app_spotify.py
-      ```
+# Ative o ambiente
+# No Windows:
+.venv\\Scripts\\activate
+
+# No macOS/Linux:
+source .venv/bin/activate
+```
+
+### Instale as Dependências
+
+Com o ambiente virtual ativo, use o arquivo `requirements.txt` para instalar as dependências.
+
+```bash
+# Instale todas as bibliotecas necessárias
+pip install -r requirements.txt
+```
+
+### Variáveis de Ambiente
+
+Dois dos três projetos precisam de chaves de API para funcionar.
+Obtenha em:
+
+- **Open Weather:** [https://openweathermap.org/api](https://openweathermap.org/api)
+- **Spotify:** [https://developer.spotify.com/dashboard/](https://developer.spotify.com/dashboard/)
+
+> Crie um arquivo chamado `.env` na raiz do projeto e adicione as seguintes variáveis:
+
+```yaml
+# Chave para o projeto de previsão do tempo
+CHAVE_API_OPEN_WEATHER="SUA_CHAVE_AQUI"
+
+# Credenciais para o projeto de busca no Spotify
+SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
+SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
+```
+
+### Iniciando os Projetos
+
+Cada aplicação é executada de forma independente.
+
+```bash
+# Para iniciar o Analisador de Nomes IBGE
+streamlit run web_app_ibge.py
+
+# Para iniciar o App de Previsão do Tempo
+streamlit run web_app_open_weather.py
+
+# Para iniciar a Busca de Artistas no Spotify
+streamlit run web_app_spotify.py
+```
+
+### Como Interagir
+
+- Após executar um dos comandos acima, uma aba será aberta no seu navegador.
+- A interação é feita diretamente pela interface web, utilizando os campos de busca e botões.
+
+---
+
+## 🌐 Projetos na Web
+
+Você pode acessar as aplicações diretamente nos links abaixo:
+
+| Projeto                       | Link de Acesso                                                |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Análise de Nomes IBGE**     | [Acessar Web App](https://web-app-api-ibge.streamlit.app/)    |
+| **App de Previsão do Tempo**  | [Acessar Web App](https://web-app-openweather.streamlit.app/) |
+| **Busca de Artistas Spotify** | [Acessar Web App](https://web-app-spotify.streamlit.app/)     |
 
 ---
 
 ## 🖼️ Demonstrações (capturas de tela)
 
-#### 📊 Screenshots Web App IBGE
+### 📊 Web App IBGE
 
-![Tela Inicial](https://i.postimg.cc/VLWnLqvt/image.png)
+![Tela Inicial do App IBGE](https://i.postimg.cc/VLWnLqvt/image.png)
+_Tela inicial da aplicação de análise de nomes._
 
-![Tela de Pesquisa](https://i.postimg.cc/KYHwyH4f/image.png)
-
----
-
-#### ☀️ Screenshots Web App OpenWeather
-
-![Tela Inicial](https://i.postimg.cc/1XCNWwv8/image.png)
-
-![Tela de Pesquisa](https://i.postimg.cc/9fJnCFFy/image.png)
+![Tela de Pesquisa do App IBGE](https://i.postimg.cc/KYHwyH4f/image.png)
+_Exibição da frequência do nome "Maria" ao longo das décadas._
 
 ---
 
-#### 🎵 Screenshots Web App Spotify
+### ☀️ Web App OpenWeather
 
-![Tela Inicial](https://i.postimg.cc/t4ybgJyc/image.png)
+![Tela Inicial do App OpenWeather](https://i.postimg.cc/1XCNWwv8/image.png)
+_Interface inicial da aplicação de previsão do tempo._
 
-![Tela de Pesquisa Artista](https://i.postimg.cc/76cDPNY1/image.png)
+![Tela de Pesquisa do App OpenWeather](https://i.postimg.cc/9fJnCFFy/image.png)
+_Consulta das condições climáticas para a cidade de Goiânia._
 
-![Tela de Pesquisa Albuns](https://i.postimg.cc/N0XjnM8f/image.png)
+---
+
+### 🎵 Web App Spotify
+
+![Tela Inicial do App Spotify](https://i.postimg.cc/t4ybgJyc/image.png)
+_Tela inicial da ferramenta de busca de artistas no Spotify._
+
+![Tela de Pesquisa de Artista no App Spotify](https://i.postimg.cc/76cDPNY1/image.png)
+_Dashboard com informações detalhadas sobre o artista "Post Malone"._
+
+![Tela de Pesquisa de Álbuns no App Spotify](https://i.postimg.cc/N0XjnM8f/image.png)
+_Lista das 10 músicas mais populares do artista e sua respectiva popularidade._
+
+---
+
+## 🤝 Colaboradores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/MarissaBorges">
+        <img src="https://github.com/MarissaBorges.png?size=100" width="100px;" alt="Foto de Marissa Borges"/><br>
+        <sub>
+          <b>Marissa Borges</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📫 Como Contribuir
+
+1.  Faça um **Fork** do projeto.
+2.  Crie uma nova branch para sua Feature (`git checkout -b feature/AmazingFeature`).
+3.  Faça o **Commit** de suas mudanças (`git commit -m 'Add some AmazingFeature'`).
+4.  Faça o **Push** da sua branch (`git push origin feature/AmazingFeature`).
+5.  Abra um **Pull Request**.
+
+### Documentações Úteis
+
+- [📝 Como criar um Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
+- [💾 Padrão de Commits (Conventional Commits)](https://www.conventionalcommits.org/en/v1.0.0/)
